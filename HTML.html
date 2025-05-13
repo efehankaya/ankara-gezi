@@ -1,0 +1,89 @@
+<!-- // HTML: Sayfanın iskeleti ve içerik yapısı -->
+<!DOCTYPE html>
+<html lang="tr"> <!-- // Dil Türkçe olarak ayarlandı -->
+<head>
+  <meta charset="UTF-8"> <!-- // Türkçe karakter desteği -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- // Mobil uyumluluk -->
+  <title>Ankara'nın Gezilecek Yerleri</title> <!-- // Tarayıcı sekmesinde görünen başlık -->
+ <link rel="stylesheet" href="CSSKOD.css"> <!-- // CSS dosyasını bağladık -->
+</head>
+<body>
+  <header class="header"> <!-- // Üst kısım başlık -->
+    <div class="logo">
+      <h1>Ankara Gezi Rehberi</h1> <!-- // Sayfa başlığı (Türkçeleştirildi) -->
+    </div>
+  </header>
+
+  <main class="main-content"> <!-- // Ana içerik alanı -->
+    <section class="yer-container"> <!-- // Tüm yerleri içine alan bölüm -->
+
+      <!-- // 1. Yer: Anıtkabir -->
+      <div class="yer" onclick="goster('Anıtkabir')">
+        <img src="YEBİ.jpeg" id ="Anıtkabir">
+        <div class="yer-info">
+          <h2>Anıtkabir</h2>
+          <p>Atatürk’ün anıt mezarı.</p>
+        </div>
+        <div class="yer-aciklama" id="Anıtkabir-desc">
+          <p>Mustafa Kemal Atatürk’ün ebedi istirahatgahı olan bu anıt, başkent Ankara’nın simgesidir.</p>
+        </div>
+      </div>
+
+      <!-- // 2. Yer: Hamamönü -->
+      <div class="yer" onclick="goster('Hamamonu')">
+        <img src="download.jpg" alt="Hamamönü">
+        <div class="yer-info">
+          <h2>Hamamönü</h2>
+          <p>Tarihi evler ve el sanatlarıyla ünlü.</p>
+        </div>
+        <div class="yer-aciklama" id="Hamamonu-desc">
+          <p>Osmanlı mimarisini yansıtan tarihi sokaklarda gezebilir, el sanatları ve yöresel lezzetleri keşfedebilirsiniz.</p>
+        </div>
+      </div>
+
+      <!-- // 3. Yer: Atakule -->
+      <div class="yer" onclick="goster('Atakule')">
+        <img src="indir (3).jpeg" alt="Atakule">
+        <div class="yer-info">
+          <h2>Atakule</h2>
+          <p>Şehrin simge yapılarından biri.</p>
+        </div>
+        <div class="yer-aciklama" id="Atakule-desc">
+          <p>Panoramik Ankara manzarasına sahip bu kule, döner restoranıyla da ilgi çekiyor.</p>
+        </div>
+      </div>
+
+      <!-- // 4. Yer: Etnografya Müzesi -->
+      <div class="yer" onclick="goster('Etnografya')">
+        <img src="indir (4).jpeg" alt="Etnografya Müzesi">
+        <div class="yer-info">
+          <h2>Etnografya Müzesi</h2>
+          <p>Türk kültürüne dair eserler.</p>
+        </div>
+        <div class="yer-aciklama" id="Etnografya-desc">
+          <p>Selçuklu ve Osmanlı dönemlerine ait kıyafetler, el sanatları ve etnografik koleksiyonlar burada sergilenir.</p>
+        </div>
+      </div>
+
+      <!-- // 5. Yer: Kuğulu Park -->
+      <div class="yer" onclick="goster('Kugulu')">
+        <img src="indir (5).jpeg" id="Kuğulu Park">
+        <div class="yer-info">
+          <h2>Kuğulu Park</h2>
+          <p>Huzurlu bir şehir parkı.</p>
+        </div>
+        <div class="yer-aciklama" id="Kugulu-desc">
+          <p>Ankara’nın kalbinde yer alan bu park, kuğularıyla ünlüdür ve dinlenmek için harika bir yerdir.</p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Ankara Gezi Rehberi | Hazırlayan: Efehan Kaya</p>
+  </footer>
+
+ <script src="JAVAKOD.js"></script> <!-- // JavaScript dosyasını ekliyoruz -->
+</body>
+</html>
